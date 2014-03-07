@@ -9,8 +9,9 @@ Setup
 Add the following assets to your ejs file that will display this page:
 
     assets.js.push('ngSharedComponents.js');
-    assets.js.push('directives/ngModal.js');
     assets.js.push('directives/ngPopup.js');
+    assets.js.push('directives/ngModal.js');
+    assets.css.push('ngModal.css');
 
 
 Modal Directive
