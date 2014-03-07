@@ -1,22 +1,7 @@
 /**
  * A simple way to open and close a popup menu.
  * @author Steven Lambert <steven.lambert@familysearch.com>
- *
- * EXAMPLE USAGE:
- * <div fs-popup ...>
- *   <a ng-click="togglePopup()" ...>Open Popup</a>
- *   <ul ng-show="isOpen" data-close="click" ...>
- *     <!-- menu contents -->
- *   </ul>
- * </div>
- *
- * REQUIRED:
- * ng-click="togglePopup()" on a child element that will open the popup menu
- * ng-show="isOpen" attribute on the child popup menu
- *
- * DATA ATTRIBUTES:
- * data-close - set on the popup menu, tells the menu on what event it should close on.
- *              Any event handlers inside the popup menu cannot call stopPropagation() otherwise this won't work.
+ * @team tesseract
  */
 angular.module('ngSharedComponents').directive('ngPopup', ['$document', function($document) {
   return {
