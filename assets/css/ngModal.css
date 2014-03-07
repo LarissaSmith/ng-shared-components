@@ -1,0 +1,128 @@
+.fs-modal,
+.fs-modal-overlay {
+	text-align: center;
+	position: fixed;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.fs-modal {
+	z-index: 1000000;
+}
+
+.fs-modal:before,
+.fs-modal:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.fs-modal-overlay {
+	background: rgb(255, 255, 255) transparent;
+	background: rgba(255, 255, 255, 0.65);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5FFFFFF, endColorstr=#A5FFFFFF)";
+}
+
+.fs-modal-container {
+	position: relative;
+	text-align: left;
+	width: 643px;
+	min-width: 300px;
+	color: #4D4D4A;
+	overflow: auto;
+	margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: white;
+	border: 1px solid #b6bcbd;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		 -o-border-radius: 6px;
+			border-radius: 6px;
+	-webkit-box-shadow: 0 0 20px #888888;
+	   -moz-box-shadow: 0 0 20px #888888;
+		-ms-box-shadow: 0 0 20px #888888;
+		 -o-box-shadow: 0 0 20px #888888;
+			box-shadow: 0 0 20px #888888;
+}
+
+.fs-modal-body {
+	padding: 0 20px 20px;
+}
+
+.fs-modal-header {
+	padding: 20px 0 0 20px;
+	margin: 0 40px 0 0;
+}
+
+.fs-modal .fs-close-button {
+  color: #333331;
+  display: inline-block;
+  position: absolute;
+  right: 42px;
+  top: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-modal .fs-close-button:after {
+  content: '';
+  position: absolute;
+  right: -22px;
+  top: 2px;
+}
+
+.fs-modal .fs-modal-button-bar {
+	background: #ECEBEA;
+	border-top: 1px solid #A3A3A3;
+	width: 100%;
+}
+
+.fs-modal .fs-modal-buttons {
+	padding: 20px;
+}
+
+.fs-modal .fs-modal-button-bar a {
+	margin: 0 0 0 20px;
+  display: inline-block;
+}
+
+.fs-modal .fs-modal-button-bar a:first-child {
+  margin-left: 0;
+}
+
+.fs-modal .fs-modal-button-bar.working .fs-modal-buttons {
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  background-image: url('spinner-gray.gif');
+}
+
+.fs-modal .fs-modal-button-bar.working .fs-ok-button,
+.fs-modal .fs-modal-button-bar.working .fs-no-button {
+  visibility: hidden;
+}
+
+.fs-modal .fs-modal-button-bar .button {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.fs-modal .fs-modal-button-bar .fs-cancel-button {
+	border: none;
+	color: #0051c4;
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+.fs-modal .fs-modal-error {
+  background-color: #FFF2F2;
+  border: 1px solid #9B211E;
+  border-left-width: 5px;
+  color: #6E0009;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 1em 0 0;
+  padding: 1em;
+  display:block;
+}
