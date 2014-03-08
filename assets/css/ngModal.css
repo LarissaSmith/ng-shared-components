@@ -1,29 +1,29 @@
-.fs-modal,
-.fs-modal-overlay {
+.ng-modal,
+.ng-modal-overlay {
 	text-align: center;
 	position: fixed;
 	top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.fs-modal {
+.ng-modal {
 	z-index: 1000000;
 }
 
-.fs-modal:before,
-.fs-modal:after {
+.ng-modal:before,
+.ng-modal:after {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.fs-modal-overlay {
+.ng-modal-overlay {
 	background: rgb(255, 255, 255) transparent;
 	background: rgba(255, 255, 255, 0.65);
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5FFFFFF, endColorstr=#A5FFFFFF)";
 }
 
-.fs-modal-container {
+.ng-modal-container {
 	position: relative;
 	text-align: left;
 	width: 643px;
@@ -47,16 +47,16 @@
 			box-shadow: 0 0 20px #888888;
 }
 
-.fs-modal-body {
+.ng-modal-body {
 	padding: 0 20px 20px;
 }
 
-.fs-modal-header {
+.ng-modal-header {
 	padding: 20px 0 0 20px;
 	margin: 0 40px 0 0;
 }
 
-.fs-modal .fs-close-button {
+.ng-modal .ng-close-button {
   color: #333331;
   display: inline-block;
   position: absolute;
@@ -66,56 +66,56 @@
   padding: 0;
 }
 
-.fs-modal .fs-close-button:after {
+.ng-modal .ng-close-button:after {
   content: '';
   position: absolute;
   right: -22px;
   top: 2px;
 }
 
-.fs-modal .fs-modal-button-bar {
+.ng-modal .ng-modal-button-bar {
 	background: #ECEBEA;
 	border-top: 1px solid #A3A3A3;
 	width: 100%;
 }
 
-.fs-modal .fs-modal-buttons {
+.ng-modal .ng-modal-buttons {
 	padding: 20px;
 }
 
-.fs-modal .fs-modal-button-bar a {
+.ng-modal .ng-modal-button-bar a {
 	margin: 0 0 0 20px;
   display: inline-block;
 }
 
-.fs-modal .fs-modal-button-bar a:first-child {
+.ng-modal .ng-modal-button-bar a:first-child {
   margin-left: 0;
 }
 
-.fs-modal .fs-modal-button-bar.working .fs-modal-buttons {
+.ng-modal .ng-modal-button-bar.working .ng-modal-buttons {
   background-position: 20px center;
   background-repeat: no-repeat;
   background-image: url('spinner-gray.gif');
 }
 
-.fs-modal .fs-modal-button-bar.working .fs-ok-button,
-.fs-modal .fs-modal-button-bar.working .fs-no-button {
+.ng-modal .ng-modal-button-bar.working .ng-ok-button,
+.ng-modal .ng-modal-button-bar.working .ng-no-button {
   visibility: hidden;
 }
 
-.fs-modal .fs-modal-button-bar .button {
+.ng-modal .ng-modal-button-bar .button {
 	font-size: 16px;
 	color: #FFFFFF;
 }
 
-.fs-modal .fs-modal-button-bar .fs-cancel-button {
+.ng-modal .ng-modal-button-bar .ng-cancel-button {
 	border: none;
 	color: #0051c4;
 	font-size: 16px;
 	padding: 5px 0;
 }
 
-.fs-modal .fs-modal-error {
+.ng-modal .ng-modal-error {
   background-color: #FFF2F2;
   border: 1px solid #9B211E;
   border-left-width: 5px;

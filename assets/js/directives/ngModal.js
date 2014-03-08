@@ -16,14 +16,14 @@ angular.module('ngSharedComponents').directive('ngModal', ['$document', function
     link: function(scope, element, attrs) {
       var events = 'keydown',
           toString = Object.prototype.toString,
-          $container = element.find('.fs-modal-container'),
-          $header = $container.find('.fs-modal-header'),
-          $closeButton = $container.find('.fs-close-button'),
-          $errorMsg = $container.find('.fs-modal-error'),
-          $buttonBar = $container.find('.fs-modal-button-bar'),
-          $okButton = $buttonBar.find('.fs-ok-button'),
-          $noButton = $buttonBar.find('.fs-no-button'),
-          $cancelButton = $buttonBar.find('.fs-cancel-button');
+          $container = element.find('.ng-modal-container'),
+          $header = $container.find('.ng-modal-header'),
+          $closeButton = $container.find('.ng-close-button'),
+          $errorMsg = $container.find('.ng-modal-error'),
+          $buttonBar = $container.find('.ng-modal-button-bar'),
+          $okButton = $buttonBar.find('.ng-ok-button'),
+          $noButton = $buttonBar.find('.ng-no-button'),
+          $cancelButton = $buttonBar.find('.ng-cancel-button');
 
       // display an error message when set to true
       scope.hasError = false;
@@ -217,20 +217,20 @@ angular.module('ngSharedComponents').directive('ngModal', ['$document', function
         $document.off(events, modalEventHandler);
       }
     },
-    template: '<div class="fs-modal" ng-show="show">' +
-                '<div class="fs-modal-overlay"></div>' +
-                '<div class="fs-modal-container">' +
-                  '<h2 class="fs-modal-header"></h2>' +
-                  '<a class="fs-close-button fs-icon-after-close" href="javascript:void(0);" ng-click="closeModal(\'close\')"></a>' +
-                  '<div class="fs-modal-body">' +
+    template: '<div class="ng-modal" ng-show="show">' +
+                '<div class="ng-modal-overlay"></div>' +
+                '<div class="ng-modal-container">' +
+                  '<h2 class="ng-modal-header"></h2>' +
+                  '<a class="ng-close-button fs-icon-after-close" href="javascript:void(0);" ng-click="closeModal(\'close\')"></a>' +
+                  '<div class="ng-modal-body">' +
                     '<div ng-transclude></div>' +
-                    '<p class="fs-modal-error" ng-show="hasError"></p>' +
+                    '<p class="ng-modal-error" ng-show="hasError"></p>' +
                   '</div>' +
-                  '<div class="fs-modal-button-bar">' +
-                    '<div class="fs-modal-buttons">' +
-                      '<a href="javascript:void(0);" class="fs-ok-button button" ng-click="buttonClickHandler(\'ok\')"></a>' +
-                      '<a href="javascript:void(0);" class="fs-no-button button" ng-click="buttonClickHandler(\'no\')"></a>' +
-                      '<a href="javascript:void(0);" class="fs-cancel-button" ng-click="closeModal(\'cancel\')"></a>' +
+                  '<div class="ng-modal-button-bar">' +
+                    '<div class="ng-modal-buttons">' +
+                      '<a href="javascript:void(0);" class="ng-ok-button button" ng-click="buttonClickHandler(\'ok\')"></a>' +
+                      '<a href="javascript:void(0);" class="ng-no-button button" ng-click="buttonClickHandler(\'no\')"></a>' +
+                      '<a href="javascript:void(0);" class="ng-cancel-button" ng-click="closeModal(\'cancel\')"></a>' +
                     '</div>' +
                   '</div>' +
                 '</div>' +
