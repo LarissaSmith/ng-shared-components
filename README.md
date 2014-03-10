@@ -84,11 +84,11 @@ Parameters
 
 **close-button-text** - Sets the CLOSE button text
 
-**hide-close-button** - Hides the close button (only if there is at least 1 button defined)
+**hide-close-button** - Hides the CLOSE button (only if there is at least 1 button defined)
 
-**hide-button-bar** - Removes the button bar (keeps close button enabled even if hide-close-button is set)
+**hide-button-bar** - Removes the button bar (keeps CLOSE button enabled even if hide-close-button is set)
 
-**work-callback** - Parent scope function to call when the OK and NO buttons are clicked (takes 2 params: buttonName, cb). Callback function must pass true if the modal should close after the operation, false if the modal should remain open, or an error message String to display an error.
+**work-callback** - Parent scope function to call when the OK or NO buttons are clicked (takes 2 params: buttonName, cb). Callback function must pass true if the modal should close after the operation, false if the modal should remain open, or an error message String to display an error.
 
 **close-callback** - Parent scope function to call when the modal is closed
 
