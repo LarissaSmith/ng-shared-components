@@ -6,13 +6,21 @@ A shared set of components that help with popup menus and modals.
 Setup
 ======
 
-Add the following assets to your ejs file that will display this page:
+Add the assets you want to use to your ejs file that will display the popup menu or modal:
 
+    // required app file
     assets.js.push('ngSharedComponents.js');
+    
+    // popup menu
     assets.js.push('directives/ngPopup.js');
+    
+    // modal
     assets.js.push('directives/ngModal.js');
     assets.css.push('ngModal.css');
 
+In your app, require the ngSharedComponents app:
+
+    angular.module('app', ['ngSharedComponents'])
 
 Modal Directive
 ===============================
